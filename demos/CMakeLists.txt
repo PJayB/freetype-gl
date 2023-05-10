@@ -30,15 +30,8 @@ macro(CREATE_DEMO _target _sources)
     endif()
 endmacro()
 
-if(WIN32 OR WIN64)
-    set(ENV{ANT_TWEAK_BAR_ROOT}
-        ${CMAKE_CURRENT_SOURCE_DIR}/../windows/AntTweakBar
-    )
-endif()
-
 # Find dependencies
 find_package(glfw3 3.2 REQUIRED)
-find_package(AntTweakBar)
 find_package(Fontconfig)
 
 add_library(demo-utils OBJECT

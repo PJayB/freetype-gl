@@ -16,7 +16,7 @@
 #include "mat4.h"
 #include "screenshot-util.h"
 
-#include <AntTweakBar.h>
+#include <imgui/imgui.h>
 #include <GLFW/glfw3.h>
 
 
